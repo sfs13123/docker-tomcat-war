@@ -1,2 +1,4 @@
-FROM quay.io/wildfly/wildfly
-ADD sample.war /opt/jboss/wildfly/standalone/deployments/
+
+FROM jetty
+ADD sample.war /var/lib/jetty/webapps/root.war
+EXPOSE 8080
