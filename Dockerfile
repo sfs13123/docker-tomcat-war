@@ -1,4 +1,4 @@
-FROM tomcat 11.0-alpine
+FROM tomcat:11.0-alpine
 
 LABEL maintainer=¡±deepak@softwareyoga.com¡±
 
