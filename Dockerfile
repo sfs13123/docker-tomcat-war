@@ -1,4 +1,9 @@
-FROM jboss/wildfly
+FROM tomcat:8.0-alpine
+
+LABEL maintainer=¡±deepak@softwareyoga.com¡±
+
+ADD sample.war /usr/local/tomcat/webapps/
+
 EXPOSE 8080
-EXPOSE 8443
-ADD sample.war /opt/jboss/wildfly/standalone/deployments/
+
+CMD ["catalina.sh", "run"]
