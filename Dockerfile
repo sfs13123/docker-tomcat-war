@@ -1,8 +1,6 @@
-FROM openjdk
+FROM tomcat:7-jdk8-openjdk
 MAINTAINER Bala
-
-RUN curl -O http://archive.apache.org/dist/tomcat/tomcat-9/v9.0.44/bin/apache-tomcat-9.0.44.tar.gz
-RUN tar xzf apache-tomcat-9.0.44.tar.gz
-ADD sample.war apache-tomcat-9.0.44/webapps/
-CMD apache-tomcat-9.0.44/bin/startup.sh && tail -f apache-tomcat-9.0.44/logs/catalina.out
+ADD sample.war /usr/local/tomcat/webapps
+EXPOSE 4372
 EXPOSE 8080
+CMD ["catalina.sh", "run"]
