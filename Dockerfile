@@ -1,5 +1,4 @@
-FROM tomcat:10.0-alpine
-
+FROM tomcat
 LABEL maintainer=¡±deepak@softwareyoga.com¡±
 
 ADD sample.war /usr/local/tomcat/webapps/
