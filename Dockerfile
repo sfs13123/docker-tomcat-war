@@ -1,6 +1,6 @@
 
 FROM jboss/wildfly
-RUN rm /opt/jboss/wildfly/standalone/deployments
-ADD ROOT.war  ROOT.war  
+ADD abc.war /opt/jboss/wildfly/standalone/deployments
+ 
 EXPOSE 8080
  
