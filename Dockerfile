@@ -1,6 +1,5 @@
-
-From tomcat 
+From  openjdk:8u151-jdk-alpine
 RUN rm -rf /usr/local/tomcat/webapps/*
 EXPOSE 8080
-COPY ROOT.war /usr/local/tomcat/webapps/
-CMD ["catalina.sh","run"]
+ 
+RUN java -Djava.security.egd=file:/dev/./urandom -jar application.jar
