@@ -1,4 +1,4 @@
-FROM oracle/glassfish:5.0
+FROM glassfish
 
 COPY ROOT.war $GLASSFISH_HOME/glassfish/domains/domain1/autodeploy/
  
