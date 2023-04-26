@@ -1,4 +1,4 @@
-From  openjdk:19-jdk-alpine3.16
+From  openjdk:11.0.16-jre
  
 EXPOSE 8080
  COPY application.jar /usr/src/myapp/application.jar
