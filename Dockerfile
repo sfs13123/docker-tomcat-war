@@ -1,9 +1,5 @@
 
-FROM openjdk 
-
-ADD ROOT.war ROOT.war
-
-ENTRYPOINT ["java"]
-CMD ["-jar", "ROOT.war"]
-
+FROM tomcat:latest
+ADD ROOT.war /usr/local/tomcat/webapps/
 EXPOSE 8080
+CMD ["catalina.sh", "run"]
