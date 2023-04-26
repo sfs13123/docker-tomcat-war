@@ -1,6 +1,8 @@
-From  openjdk:11.0.16-jre
+FROM adoptopenjdk/openjdk11-openj9:jdk-11.0.1.13-alpine-slim
+
+WORKDIR /app
  
+
+CMD ["sh", "-c","java -Djava.security.egd=file:/dev/./urandom -jar /app/application.jar"]
 EXPOSE 8080
- COPY application.jar /usr/src/myapp/application.jar
-WORKDIR /usr/src/myapp
-CMD java -jar application.jar
+ 
