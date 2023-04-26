@@ -1,4 +1,4 @@
-FROM tomcat:jdk11-openjdk-slim-buster
+FROM tomcat:jdk11-temurin
 
 MAINTAINER pateluday07@gmail.com
 RUN rm -rf /usr/local/tomcat/webapps/*
