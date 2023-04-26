@@ -1,4 +1,4 @@
-FROM jboss/wildfly
-ADD ROOT.war /opt/jboss/wildfly/standalone/deployments/
-EXPOSE 8080
+FROM tomcat 
+COPY ROOT.war /usr/local/tomcat/webapps/
+ 
  
