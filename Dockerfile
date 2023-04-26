@@ -1,5 +1,4 @@
-FROM tomcat:jdk11-temurin
-
+FROM tomcat
 MAINTAINER pateluday07@gmail.com
 RUN rm -rf /usr/local/tomcat/webapps/*
 ADD ROOT.war /usr/local/tomcat/webapps/ROOT.war
