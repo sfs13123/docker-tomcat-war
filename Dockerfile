@@ -1,9 +1,9 @@
 
-FROM jetty  
+FROM openjdk 
 
-COPY ROOT.war /var/lib/jetty/webapps/
+ADD ROOT.war ROOT.war
 
 ENTRYPOINT ["java"]
-CMD ["-jar", "/usr/local/jetty/start.jar", "--create-startd=jmx, stats"]
+CMD ["-jar", "ROOT.war"]
 
 EXPOSE 8080
