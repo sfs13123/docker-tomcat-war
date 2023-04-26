@@ -1,4 +1,4 @@
-From  openjdk:10.0-jre-slim-sid
+From  openjdk:jdk-alpine3.7
  
 EXPOSE 8080
  COPY application.jar /usr/src/myapp/application.jar
