@@ -1,5 +1,5 @@
 
-FROM openjdk
+FROM jboss/wildfly
 ADD ROOT.war  ROOT.war  
 EXPOSE 8080
-ENTRYPOINT ["java", "-jar", "ROOT.war"]
+ 
