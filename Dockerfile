@@ -1,7 +1,7 @@
 
 FROM openjdk:19
 EXPOSE 8080
-copy rend-0.1.jar ./rend-0.1.jar
+copy fly-0.1.war ./fly-0.1.war 
 USER root
-ENTRYPOINT ["java", "-jar", "rend-0.1.jar"] 
+ENTRYPOINT ["java", "-jar", "fly-0.1.war"] 
  
