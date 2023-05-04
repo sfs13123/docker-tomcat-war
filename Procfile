@@ -1,0 +1,1 @@
+eb: java $JAVA_OPTS -jar scal-0.1.jar --spring.profiles.active=prod
